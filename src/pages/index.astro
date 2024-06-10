@@ -1,22 +1,48 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
 import Badge from "../components/Badge.astro";
+import LinkedIn from "../components/Icons/LinkedIn.astro";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Bienvenido a IGG">
   <main>
     <section class="w-full mx-auto lg:w-[740px] py-44">
+      <span>
+        <img
+          class="rounded-full w-12 h-12 mb-4"
+          src="https://avatars.githubusercontent.com/u/43449665?v=4"
+          alt="Logo Empresa"
+        />
+      </span>
+
       <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4">
-        Hola! Somos IGG 
-        <Badge>Disponibles para contacto</Badge>
-     
+        Hola! Somos IGG
+        <div class="flex justify-center items-center">
+          <Badge>Disponibles para contacto</Badge>
+        </div>
       </h1>
 
-      <h2>
-        Con +5 anos de experiencia. Brindando soluciones a problemas complejos
-        mediantes las Tecnologias
+      <h2 class="text-2xl text-wrap">
+        <span>Con más de cinco años de experiencia en el sector</span>, nos
+        especializamos en proporcionar soluciones innovadoras y efectivas a
+        problemas complejos utilizando las más avanzadas tecnologías. <span
+          class="text-blue-400/90"
+          >Somos un grupo de ingenieros chilenos 🇨🇱</span
+        > comprometidos con la excelencia y dedicados a superar los desafíos de nuestros
+        clientes mediante el uso de herramientas y metodologías de última generación.
+        Nuestra pasión por la ingeniería y el compromiso con la calidad nos ha permitido
+        destacarnos en el mercado, ofreciendo un servicio integral y personalizado
+        que se adapta a las necesidades específicas de cada proyecto.
       </h2>
+
+      <ul>
+        <li>
+          <a href="">
+            <LinkedIn class="w-6 h-6" />
+          LinkedIn
+          </a>
+        </li>
+      </ul>
     </section>
   </main>
 </Layout>
