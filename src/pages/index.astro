@@ -3,21 +3,21 @@ import Layout from "../layouts/Layout.astro";
 import Badge from "../components/Badge.astro";
 import LinkedIn from "../components/Icons/LinkedIn.astro";
 import SocialPill from "../components/SocialPill.astro";
-import Mail from "../components/Icons/Mail.astro"
-import Youtube from "../components/Icons/Youtube.astro"
-import Experience from "../components/Experience.astro"
+import Mail from "../components/Icons/Mail.astro";
+import Youtube from "../components/Icons/Youtube.astro";
+import Experience from "../components/Experience.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import Maleta from "../components/Icons/Maleta.astro"
 ---
 
 <Layout title="Bienvenido a IGG">
   <main>
-    <section class="w-full mx-auto lg:w-[740px] py-44">
-      <span>
-        <img
-          class="rounded-full size-12 mb-4"
-          src="https://avatars.githubusercontent.com/u/43449665?v=4"
-          alt="Logo Empresa"
-        />
-      </span>
+    <SectionContainer class="py-44 pb-24">
+      <img
+        class="rounded-full size-12 mb-4"
+        src="https://avatars.githubusercontent.com/u/43449665?v=4"
+        alt="Logo Empresa"
+      />
 
       <h1 class="text-5xl font-bold flex flex-row gap-x-4 pb-4">
         Hola! Somos IGG
@@ -52,11 +52,16 @@ import Experience from "../components/Experience.astro"
           <Youtube class="size-4" />
           YouTube
         </SocialPill>
-
-        <Experience></Experience>
       </nav>
-
-   
-    </section>
+    </SectionContainer>
   </main>
+
+  <SectionContainer>
+    <h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
+      <Maleta class="size-8" />
+      Experience</h2>
+   
+   
+    <Experience/>
+  </SectionContainer>
 </Layout>
